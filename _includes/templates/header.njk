@@ -1,0 +1,16 @@
+<header>
+  <h1>
+    <a href="/">
+      <img src="/assets/images/pinkcircle.png" width="25px;" style="vertical-align:middle" alt="{% include "/templates/name.njk" %}">
+      <span class="name">{% include "/templates/name.njk" %}</span>
+    </a>
+  </h1>
+  {% set menuItems = search.pages("type=pages") %}
+  <nav>
+    <ul class="menu">
+      {% for menuItem in menuItems %}
+        {% include "/templates/menu-item.njk" %}
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

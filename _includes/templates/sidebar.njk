@@ -1,0 +1,35 @@
+<div class="directory">
+  <h3>Directory</h3>
+  <div>
+    <ul class="page-list">
+      {% set menuItems = search.pages("type=pages") %}
+      {% for menuItem in menuItems %}
+        {% include "/templates/menu-item.njk" %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<h4>Latest posts:</h4>
+<div id="post-dir">
+  <div></div>
+  <menu>
+    <ul class="post-list">
+      {% set posts = search.pages("type=posts", "date=desc", 3) %}
+      {% for post in posts %}
+        {% include "templates/post-item.njk" %}
+      {% endfor %}
+    </ul>
+  </menu>
+</div>
+<a href="/" class="button">View all</a>
+
+<div class="footer-container-sidebar">
+  <h4>Links</h4>
+  {% include "/templates/footer.njk" %}
+</div>
+<a href="/pages/about" id="sidebar-character" alt="about">
+  {# <div> #}
+    {# <img src="/assets/images/pinkcircle.png"> #}
+  {# </div> #}
+</a>

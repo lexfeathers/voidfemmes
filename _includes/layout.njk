@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{% include "/templates/name.njk" %} - {{ title }}</title>
+		<link rel="stylesheet" href="/assets/styles.css" />
+		<link rel="favicon" href="/assets/favicon.ico" />
+		<meta name="robots" content="noai, noimageai">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	</head>
+	<body>		
+			{% include "templates/header.njk" %}
+
+			<main>
+				<aside id="sidebar">
+					{% include "/templates/sidebar.njk" %}
+				</aside>
+				<section id="content">
+					{% if author %}
+						<a href="/" alt="Back to directory" class="button"><- directory</a>
+						<h3 class="subheading">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
+					{% endif %}
+					{% if title != 'home' %}
+						<h2>{{ title }}</h2>
+						<hr class="faded">
+					{% endif %}
+					<article>
+						{{ content | safe }}
+					</article>
+				</section>
+			</main>
+
+			<div class="footer-container">
+				{% include "templates/footer.njk" %}
+			</div>
+	</body>
+</html>
