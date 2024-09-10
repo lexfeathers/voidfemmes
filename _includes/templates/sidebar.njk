@@ -2,7 +2,7 @@
   <h3>Directory</h3>
   <div>
     <ul class="page-list">
-      {% set menuItems = search.pages("type=pages") %}
+      {% set menuItems = search.pages("type=pages", "order=asc") %}
       {% for menuItem in menuItems %}
         {% include "/templates/menu-item.njk" %}
       {% endfor %}
@@ -12,7 +12,7 @@
 
 <h4>Latest posts:</h4>
 <div id="post-dir">
-  <div></div>
+  <div class="margin-bar"></div>
   <menu>
     <ul class="post-list">
       {# Get posts that aren't drafts #}
@@ -23,7 +23,7 @@
     </ul>
   </menu>
 </div>
-<a href="/" class="button">View all</a>
+<a href="/pages/directory/" class="button">View all</a>
 
 <div class="footer-container-sidebar">
   <h4>Links</h4>

@@ -1,6 +1,7 @@
 ---
 title: about
 description: This is a page... that tells you about me.
+order: 3
 ---
 ### Void Femmes is a project by Lex Feathers.
 There's not much to say other than WOW WOULD YOU LOOK AT THIS SITE AND HUH LOOK AT THAT, 

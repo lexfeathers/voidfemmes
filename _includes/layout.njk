@@ -17,13 +17,17 @@
 					{% include "/templates/sidebar.njk" %}
 				</aside>
 				<section id="content">
-					{% if author %}
-						<a href="/" alt="Back to directory" class="button"><- directory</a>
-						<h3 class="subheading">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
+					{% if title != 'home' and type != 'posts' %}
+						<a href="/" alt="Back to home" class="button"><- home</a>
+					{% elif type == 'posts' %}
+						<a href="/pages/directory" alt="Back to directory" class="button"><- directory</a>
 					{% endif %}
 					{% if title != 'home' %}
 						<h2>{{ title }}</h2>
 						<hr class="faded">
+					{% endif %}
+					{% if author %}
+						<h3 class="faded author">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
 					{% endif %}
 					<article>
 						{{ content | safe }}

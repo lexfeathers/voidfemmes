@@ -14,6 +14,11 @@
   --colour-text-highlight: color-mix(in srgb, var(--colour-background) 85%, var(--colour-text) 15%);
   --colour-text-faded: color-mix(in srgb, var(--colour-background) 60%, var(--colour-text) 40%);
 
+  /* Font sizing */
+  --text-small: 12pt;
+  --text-medium: 18pt;
+  --text-large: 24pt;
+
   /* Title/logo symbol flourish */
   --sig-symbol: ' ~';
 }
@@ -31,6 +36,20 @@
   font-family: 'Fira Code', monospace, 'Courier New', Courier;
   /* Not sure why, but Fira doesn't seem to _actually_ import with a font-weight of 300, so we're declaring it here. */
   font-weight: 300;
+}
+
+/* Helpers */
+
+.text-small {
+  font-size: var(--text-small) !important;
+}
+
+.text-medium {
+  font-size: var(--text-medium) !important;
+}
+
+.text-lage {
+  font-size: var(--text-large) !important;
 }
 
 body {
@@ -74,9 +93,15 @@ main * {
   background-color: var(--colour-light-background);
 }
 
+
 .subheading {
   font-size: smaller;
   color: var(--colour-secondary);
+}
+
+
+.author {
+  font-size: var(--text-small);
 }
 
 .faded {
@@ -85,6 +110,72 @@ main * {
 
 .date {
   font-size: 12pt;
+}
+
+.banner {
+  max-height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px var(--colour-background);
+}
+
+.banner img {
+  width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+article:has(.homepage-excerpt) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+article.homepage-excerpt {
+  min-height: 100%;
+}
+
+.homepage-excerpt {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.homepage-excerpt figure {
+  z-index: 0;
+  margin: 1rem 0 0 0;
+  max-height: 24ch;
+  overflow: hidden;
+  background: -webkit-linear-gradient(var(--colour-text), var(--colour-text), var(--colour-text), var(--colour-text), rgba(0, 0, 0, 0.0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 
+.homepage-excerpt-container div:nth-child(2)::after {
+  content: '[...]';
+  margin: 0.5rem 0;
+  display: block;
+} 
+*/
+
+.homepage-excerpt h3 {
+  margin: 0 0 1rem 0;
+}
+
+.homepage-excerpt-date {
+  color: var(--colour-secondary);
+  font-size: 12pt;
+}
+
+.homepage-excerpt-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .directory .date {
@@ -136,7 +227,7 @@ header nav {
   max-width: calc(100% - calc(1rem + 4px));
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: '...';
+  overflow-y: "...";
 }
 
 #sidebar a {
@@ -194,7 +285,7 @@ header nav {
   flex-direction: row;
 }
 
-#post-dir div {
+.margin-bar {
   background-color: var(--colour-text-highlight);
   /* width: 4px; */
   min-width: 4px;
@@ -216,8 +307,21 @@ header nav {
   flex: 3 1 auto;
 }
 
+/* Do not apply bottom padding to the homepage */
+#content article:not(:has(.homepage-excerpt)) {
+  padding: 0 0 6rem 0;
+}
+
 a {
   color: var(--colour-secondary);
+}
+
+.excerpt {
+  padding-bottom: 1rem;
+}
+
+.excerpt figure {
+  padding: 1rem 0;
 }
 
 .button {
@@ -248,7 +352,7 @@ figure img {
 }
 
 figure {
-  margin: auto !important;
+  margin: auto;
 }
 
 figcaption {

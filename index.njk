@@ -1,20 +1,53 @@
 ---
 title: home
 type: pages
+order: 1
 ---
 
-<h1>All posts<span class="faded"> (newest to oldest):</span></h1>
+<div class="banner">
+  <img src="/assets/images/I need to know your form.jpg" alt="Welcome to the Void Femmes website">
+</div>
 
-{% set posts = search.pages("type=posts draft=false", "published=desc") %}
-{% if posts %}
-  <ul class="directory">
-    {% for post in posts %}
-      {% include "templates/post-item.njk" %}
-      <span class="faded date">
-        {% include "/templates/date.njk" %}
-      </span>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>There are no posts to display.</p>
-{% endif %}
+<h1 class="faded" style="margin-bottom: 0;">Latest:</h1>
+
+<article class="homepage-excerpt">
+  {# Get the latest post #}
+  {% set latestPost = search.pages("type=posts draft=false", "published=desc", 1) %}
+  {% for post in latestPost %}
+    <div class="homepage-excerpt-container">
+      <div class="margin-bar"></div>
+      <div>
+        <h3>{{ post.title }}</h3>
+    
+        <a href="{{ post.url }}">
+          <span class="homepage-excerpt-date">
+            Posted {% include "/templates/date.njk" %} by {{ post.author }}
+          </span>
+        </a>
+        <figure>
+          {{ post.content | safe }}
+        </figure>
+      </div>
+    </div>
+
+    <a href="{{ post.url }}" class="button" style="text-align: right;">Read more -></a>
+  {% endfor %}
+</article>
+
+{# <div class="post-directory" class="text-small">
+  <h1>All posts<span class="faded"> (newest to oldest):</span></h1>
+
+  {% set posts = search.pages("type=posts draft=false", "published=desc") %}
+  {% if posts %}
+    <ul class="directory">
+      {% for post in posts %}
+        {% include "/templates/post-item.njk" %}
+        <span class="faded date">
+          {% include "/templates/date.njk" %}
+        </span>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no posts to display.</p>
+  {% endif %}
+</div> #}
