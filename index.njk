@@ -9,7 +9,12 @@ type: pages
 {% if posts %}
   <ul class="directory">
     {% for post in posts %}
-      {% include "templates/post-item.njk" %}<span class="faded date">{% include "/templates/date.njk" %}</span>
+      {% if post.draft == false %}
+        {% include "templates/post-item.njk" %}
+        <span class="faded date">
+            {% include "/templates/date.njk" %}
+        </span>
+      {% endif %}
     {% endfor %}
   </ul>
 {% else %}
