@@ -1,5 +1,5 @@
-import fields from "lume/cms/fields/core.ts";
 import lumeCMS from "lume/cms/mod.ts";
+import fields from "lume/cms/fields/core.ts";
 
 // 1. Create the cms instance
 const cms = lumeCMS({

@@ -5,16 +5,14 @@ type: pages
 
 <h1>All posts<span class="faded"> (newest to oldest):</span></h1>
 
-{% set posts = search.pages("type=posts", "date=desc") %}
+{% set posts = search.pages("type=posts draft=false", "published=desc") %}
 {% if posts %}
   <ul class="directory">
     {% for post in posts %}
-      {% if post.draft == false %}
-        {% include "templates/post-item.njk" %}
-        <span class="faded date">
-            {% include "/templates/date.njk" %}
-        </span>
-      {% endif %}
+      {% include "templates/post-item.njk" %}
+      <span class="faded date">
+        {% include "/templates/date.njk" %}
+      </span>
     {% endfor %}
   </ul>
 {% else %}

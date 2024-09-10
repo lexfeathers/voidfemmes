@@ -15,7 +15,8 @@
   <div></div>
   <menu>
     <ul class="post-list">
-      {% set posts = search.pages("type=posts", "date=desc", 3) %}
+      {# Get posts that aren't drafts #}
+      {% set posts = search.pages("type=posts draft=false", "published=desc", 5) %}
       {% for post in posts %}
         {% include "templates/post-item.njk" %}
       {% endfor %}
