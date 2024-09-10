@@ -5,7 +5,7 @@ order: 3
 ---
 ### Void Femmes is a project by Lex Feathers.
 There's not much to say other than WOW WOULD YOU LOOK AT THIS SITE AND HUH LOOK AT THAT, 
-A `FLOAT: RIGHT` IMAGE!
+A `float: right` IMAGE!
 <figure class="right">
   <img src="/assets/images/oofeyes.jpg" alt="A painting of a woman staring a book she's reading with wide, incredulous eyes."> 
   <figcaption>Woah. Just wow.</figcaption>

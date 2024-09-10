@@ -381,7 +381,6 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   background-color: var(--colour-text-highlight);
-  text-transform: lowercase;
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-weight: 300;
