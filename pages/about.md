@@ -1,7 +1,7 @@
 ---
 title: about
+description: This is a page... that tells you about me.
 ---
-
 ### Void Femmes is a project by Lex Feathers.
 There's not much to say other than WOW WOULD YOU LOOK AT THIS SITE AND HUH LOOK AT THAT, 
 A `FLOAT: RIGHT` IMAGE!
@@ -17,4 +17,5 @@ I am so tired.
 Please let me just have a website. This is what happens when you want a website and say "I'll just make one myself. Shouldn't take too long!"
 But it did take too long. I keep rewriting this thing and starting over. I never get to the point where I actually add anything to the site.
 
-What would you do?????
+What would you do????? I'm really not sure.
+Anyway I've got a CMS running and now I'm posting with it!

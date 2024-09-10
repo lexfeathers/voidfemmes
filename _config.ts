@@ -3,6 +3,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import favicon from "lume/plugins/favicon.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import date from "lume/plugins/date.ts";
+import feed from "lume/plugins/feed.ts";
 
 const site = lume();
 site.use(nunjucks());
@@ -16,6 +17,18 @@ site.use(sitemap({
 site.use(date({
   formats: {
     "MDY": "M/d/yyyy",
+  },
+}));
+site.use(feed({
+  output: ["/posts.rss", "/posts.json"],
+  query: "type=post",
+  info: {
+    title: "=site.title",
+    description: "=site.description",
+  },
+  items: {
+    title: "=title",
+    description: "=excerpt",
   },
 }));
 
