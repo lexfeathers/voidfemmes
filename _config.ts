@@ -32,6 +32,8 @@ site.use(feed({
   },
 }));
 
+
 site.copy("/assets/"); // Iclude assets in the build
+site.copy("/uploads/"); // Iclude assets in the build
 
 export default site;

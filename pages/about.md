@@ -7,7 +7,7 @@ order: 3
 There's not much to say other than WOW WOULD YOU LOOK AT THIS SITE AND HUH LOOK AT THAT, 
 A `float: right` IMAGE!
 <figure class="right">
-  <img src="/assets/images/oofeyes.jpg" alt="A painting of a woman staring a book she's reading with wide, incredulous eyes."> 
+  <img src="/assets/images/Seen.png" alt="A painting of a woman staring a book she's reading with wide, incredulous eyes."> 
   <figcaption>Woah. Just wow.</figcaption>
 </figure>
 
@@ -20,3 +20,5 @@ But it did take too long. I keep rewriting this thing and starting over. I never
 
 What would you do????? I'm really not sure.
 Anyway I've got a CMS running and now I'm posting with it!
+
+

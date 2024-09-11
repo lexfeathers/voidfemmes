@@ -15,7 +15,4 @@ And now I'm just gonna repeat some text to test out truncation for the excerpt.
 
 Next thing you know you're booking it across the city to the supply shop just to get this one thing, but you try to pick up other stuff you might need just in case, and then you get home and it happens again because you didn't anticipate some specific second need of the project.
 Next thing you know you're booking it across the city to the supply shop just to get this one thing, but you try to pick up other stuff you might need just in case, and then you get home and it happens again because you didn't anticipate some specific second need of the project.
-Next thing you know you're booking it across the city to the supply shop just to get this one thing, but you try to pick up other stuff you might need just in case, and then you get home and it happens again because you didn't anticipate some specific second need of the project.
-Next thing you know you're booking it across the city to the supply shop just to get this one thing, but you try to pick up other stuff you might need just in case, and then you get home and it happens again because you didn't anticipate some specific second need of the project.
-Next thing you know you're booking it across the city to the supply shop just to get this one thing, but you try to pick up other stuff you might need just in case, and then you get home and it happens again because you didn't anticipate some specific second need of the project.
-Next thing you know you're booking it across the city to the supply shop just to get this one thing, but you try to pick up other stuff you might need just in case, and then you get home and it happens again because you didn't anticipate some specific second need of the project.
+

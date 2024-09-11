@@ -128,6 +128,14 @@ main * {
   height: auto;
 }
 
+audio {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: 4px;
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+}
+
 article:has(.homepage-excerpt) {
   display: flex;
   flex-direction: column;
@@ -176,6 +184,11 @@ article.homepage-excerpt {
 .homepage-excerpt-container {
   display: flex;
   flex-direction: row;
+}
+
+.homepage-excerpt-container figure figure>img,
+.homepage-excerpt-container figcaption {
+  display: none;
 }
 
 .directory .date {
@@ -349,25 +362,30 @@ figure img {
   border: 1px solid var(--colour-secondary);
   border-radius: 8px;
   box-shadow: 4px 6px 4px black;
+  max-width: 100%;
 }
 
 figure {
   margin: auto;
 }
 
+figure.right {
+  max-width: 60%;
+}
+
 figcaption {
-  font-style: italic;
+  /* font-style: italic; */
   opacity: 0.6;
   margin: 0.5rem 0 0.75rem 0;
 }
 
-figcaption::before {
+/* figcaption::before {
   content: '"';
 }
 
 figcaption::after {
   content: '"';
-}
+} */
 
 /* For floating images in a body of text, magazine-style. 
    Generally, we want to apply this to a <figure> element. */
@@ -384,7 +402,6 @@ code {
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: italic;
 }
 
 .directory {
@@ -461,12 +478,8 @@ footer a {
   }
 
   .right {
-    float: none;
-    margin-left: 0 !important;
-  }
-
-  figure img {
-    max-width: 85%;
+    float: right;
+    margin-left: 1rem !important;
   }
 
   header {
