@@ -4,6 +4,7 @@ import favicon from "lume/plugins/favicon.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import date from "lume/plugins/date.ts";
 import feed from "lume/plugins/feed.ts";
+import cleancss from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
 
 const site = lume();
 site.use(nunjucks());
