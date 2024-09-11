@@ -6,13 +6,7 @@ const cms = lumeCMS({
   site: {
     name: "Void Femmes",
     url: "/",
-  },
-  auth: {
-    method: "basic",
-    users: {
-      lex: "totallycorrect",
-    },
-  },  
+  }, 
 });
 
 // 2. Create file system
