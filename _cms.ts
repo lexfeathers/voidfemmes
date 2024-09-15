@@ -76,7 +76,12 @@ cms.collection({
     {
       name: "published",
       type: "datetime",
-      mode: "create"
+      label: "Created date",
+      value: new Date(),
+      description: "Set a future date if you want to publish it later",
+      attributes: {
+        placeholder: "For example: 2024-01-01 00:00:01",
+      },
     },
     "content: markdown",
     "tags: list",
