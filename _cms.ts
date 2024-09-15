@@ -10,7 +10,7 @@ const password = Deno.env.get("PASSWORD");
 const cms = lumeCMS({
   site: {
     name: "Void Femmes",
-    url: "/",
+    url: "voidfemmes.ca/admin",
   }, 
   auth: {
     method: "basic",
