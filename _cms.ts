@@ -65,8 +65,8 @@ cms.collection({
     {
       name: "author",
       type: "text",
-      init(field) {
-        field.value = "Lex Feathers";
+      attributes: {
+        placeholder: "Lex Feathers",
       },
     },
     {
