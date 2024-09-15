@@ -65,9 +65,10 @@ cms.collection({
     {
       name: "author",
       type: "text",
-      attributes: {
-        placeholder: "Lex Feathers",
-      },
+      options: [
+        "Lex",
+        "Lex Feathers",
+      ],
     },
     {
       name: "draft",
