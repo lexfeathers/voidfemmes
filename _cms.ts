@@ -1,7 +1,7 @@
 import lumeCMS from "lume/cms/mod.ts";
 import GitHub from "lume/cms/storage/github.ts";
 import { Octokit } from "npm:octokit";
-import fields from "lume/cms/fields/core.ts";
+import _fields from "lume/cms/fields/core.ts";
 
 const username = Deno.env.get("USERNAME");
 const password = Deno.env.get("PASSWORD");
@@ -62,7 +62,13 @@ cms.collection({
   store: "my_fs:posts/*.md",
   fields: [
     "title: text",
-    "author: text",
+    {
+      name: "author",
+      type: "text",
+      init(field) {
+        field.value = "Lex Feathers";
+      },
+    },
     {
       name: "draft",
       type: "checkbox",
