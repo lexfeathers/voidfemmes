@@ -3,13 +3,23 @@ import GitHub from "lume/cms/storage/github.ts";
 import { Octokit } from "npm:octokit";
 import fields from "lume/cms/fields/core.ts";
 
+const username = Deno.env.get("USERNAME");
+const password = Deno.env.get("PASSWORD");
+
 // 1. Create the cms instance
 const cms = lumeCMS({
   site: {
     name: "Void Femmes",
     url: "/",
   }, 
+  auth: {
+    method: "basic",
+    users: {
+      [username]: password,
+    },
+  },
 });
+
 
 // 2. Create file system
 // cms.storage("my_fs", "/");
