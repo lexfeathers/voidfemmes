@@ -23,10 +23,6 @@
   --sig-symbol: ' ~';
 }
 
-title {
-  text-transform: capitalize;
-}
-
 /* Fonts */
 @font-face {
   font-family: "Fira Code", monospace;

@@ -13,7 +13,7 @@ order: 1
 <article class="homepage-excerpt">
   {# Get the latest post #}
   {% set latestPost = search.pages("type=posts draft=false", "published=desc", 1) %}
-  {% for post in latestPost %}
+  {% asyncEach  post in latestPost %}
     <div class="homepage-excerpt-container">
       <div class="margin-bar"></div>
       <div>
@@ -31,7 +31,7 @@ order: 1
     </div>
 
     <a href="{{ post.url }}" class="button" style="text-align: right;">Read more -></a>
-  {% endfor %}
+  {% endeach %}
 </article>
 
 {# <div class="post-directory" class="text-small">
