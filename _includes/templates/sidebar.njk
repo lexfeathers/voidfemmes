@@ -3,9 +3,9 @@
   <div>
     <ul class="page-list">
       {% set menuItems = search.pages("type=pages", "order=asc") %}
-      {% for menuItem in menuItems %}
+      {% asyncEach menuItem in menuItems %}
         {% include "/templates/menu-item.njk" %}
-      {% endfor %}
+      {% endeach %}
     </ul>
   </div>
 </div>
@@ -17,9 +17,9 @@
     <ul class="post-list">
       {# Get posts that aren't drafts #}
       {% set posts = search.pages("type=posts draft=false", "published=desc", 5) %}
-      {% for post in posts %}
+      {% asyncEach post in posts %}
         {% include "templates/post-item.njk" %}
-      {% endfor %}
+      {% endeach %}
     </ul>
   </menu>
 </div>
