@@ -1,4 +1,6 @@
 import lumeCMS from "lume/cms/mod.ts";
+import GitHub from "lume/cms/storage/github.ts";
+import { Octokit } from "npm:octokit";
 import fields from "lume/cms/fields/core.ts";
 
 // 1. Create the cms instance
@@ -10,7 +12,16 @@ const cms = lumeCMS({
 });
 
 // 2. Create file system
-cms.storage("my_fs", "/");
+// cms.storage("my_fs", "/");
+
+cms.storage(
+  "my_fs",
+  new GitHub({
+    client: new Octokit({ auth: Deno.env.get("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") }),
+    owner: "lexfeathers",
+    repo: "voidfemmes",
+  }),
+);
 
 // 3. Create a document to edit the homepage (index.md file)
 cms.document(
