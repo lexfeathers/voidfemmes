@@ -2,7 +2,7 @@
   <h3>Nav</h3>
   <div>
     <ul class="page-list">
-      {% include "templates/mainmenu.njk" %}
+      {% include "/templates/mainmenu.njk" %}
     </ul>
   </div>
 </div>
@@ -15,7 +15,7 @@
       {# Get posts that aren't drafts #}
       {% set posts = search.pages("type=posts draft=false", "published=desc", 5) %}
       {% asyncEach post in posts %}
-      {% include "templates/post-item.njk" %}
+      {% include "/templates/post-item.njk" %}
       {% endeach %}
     </ul>
   </menu>
