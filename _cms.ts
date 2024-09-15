@@ -17,7 +17,7 @@ const cms = lumeCMS({
 cms.storage(
   "my_fs",
   new GitHub({
-    client: new Octokit({ auth: Deno.env.get("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") }),
+    client: new Octokit({ auth: Deno.env.get("GITHUB_TOKEN") }),
     owner: "lexfeathers",
     repo: "voidfemmes",
   }),
