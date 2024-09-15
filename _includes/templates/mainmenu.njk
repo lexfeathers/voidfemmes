@@ -1,0 +1,4 @@
+      {% set menuItems = search.pages("type=pages", "order=asc") %}
+      {% asyncEach menuItem in menuItems %}
+        <li class="menu-item"><a href="{{ menuItem.url }}">{{ menuItem.title }}</a></li>
+      {% endeach %}
