@@ -20,7 +20,6 @@ const cms = lumeCMS({
   },
 });
 
-
 // 2. Create file system
 // cms.storage("my_fs", "/");
 
