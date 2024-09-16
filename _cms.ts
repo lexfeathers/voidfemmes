@@ -109,10 +109,7 @@ cms.collection({
   name: "links",
   store: "my_fs:links/*.md",
   fields: [
-    {
-      name: "title",
-      type: "text",
-    },
+    "title: text",
     {
       name: "link",
       type: "text",
