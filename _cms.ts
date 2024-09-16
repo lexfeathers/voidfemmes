@@ -77,6 +77,7 @@ cms.collection({
       name: "published",
       type: "datetime",
       label: "Created date",
+      mode: "create"
     },
     {
       name: "image",
