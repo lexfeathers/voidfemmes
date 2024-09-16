@@ -83,6 +83,11 @@ cms.collection({
       type: "file",
       uploads: "uploads",
     },
+    {
+      name: "image_caption",
+      type: "text",
+      label: "Image caption",
+    },
     "content: markdown",
     "tags: list",
     {

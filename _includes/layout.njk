@@ -46,7 +46,9 @@
 							<img src="{{ image }}" alt="{{ title }}">
 						</figure>
 
-						<figcaption>{{ title }}</figcaption>
+						{% ifAsync image_caption %}
+							<figcaption>{{ image_caption }}</figcaption>
+						{% endif %}
 					{% endif %}
 				{% endif %}
 
