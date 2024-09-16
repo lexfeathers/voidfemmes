@@ -94,12 +94,10 @@ main * {
   background-color: var(--colour-light-background);
 }
 
-
 .subheading {
   font-size: smaller;
   color: var(--colour-secondary);
 }
-
 
 .author {
   font-size: var(--text-small);
@@ -489,6 +487,14 @@ footer a {
 
   header * {
     font-size: 14pt;
+  }
+
+  /* header .menu {
+    flex-direction: column;
+  } */
+
+  header .menu a {
+    font-size: 12pt;
   }
 
   header .name {
