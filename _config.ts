@@ -32,7 +32,7 @@ site.use(feed({
     generator: true, // Set `true` to automatically generate the "Lume {version}"
   },
   items: {
-    title: "=title",
+    title: "$title",
     description: "=excerpt",
     published: "=date", // The publishing date of every item
     updated: undefined, // The last update of every item
