@@ -113,7 +113,7 @@ cms.collection({
     "title: text",
     {
       name: "link",
-      type: "text",
+      type: "url",
       label: "Link (needs to begin with https://)"
     },
   ],
