@@ -21,12 +21,11 @@ const cms = lumeCMS({
   extraHead: `
   <style>
     [data-theme="dark"] {
-      color-scheme: dark;
-      --color-text: hsl(220, 20%, 90%);
+      --color-text: hsl(220, 0%, 90%);
       --color-dim: hsl(220, 0%, 60%);
-      --color-line: hsl(220, 20%, 20%);
-      --color-line-light: hsl(220, 20%, 15%);
-      --color-highlight: hsl(220, 20%, 18%);
+      --color-line: hsl(220, 0%, 20%);
+      --color-line-light: hsl(220, 0%, 15%);
+      --color-highlight: hsl(220, 0%, 18%);
       --color-background: hsl(220, 0%, 10%);
       --color-input-text: var(--color-white);
       --color-input-bg: var(--color-black);
