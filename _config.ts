@@ -25,7 +25,7 @@ site.use(feed({
   query: "type=posts",
   sort: "date=desc,",
   info: {
-    title: "=site.title",
+    title: "Void Femmes",
     description: "=site.description",
     published: new Date(), // The publishing date
     lang: "en", // The language of the feed
