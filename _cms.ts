@@ -66,7 +66,6 @@ cms.collection({
       name: "author",
       type: "text",
       options: [
-        "Lex",
         "Lex Feathers",
       ],
     },
