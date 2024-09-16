@@ -6,4 +6,6 @@ image: /uploads/all-fours-cover.png
 tags: []
 excerpt: Hey this is a test!
 ---
+<img src="{{ image }}">
 
+Yep!
