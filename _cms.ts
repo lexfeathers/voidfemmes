@@ -114,6 +114,7 @@ cms.collection({
     {
       name: "link",
       type: "text",
+      label: "Link (needs to begin with https://)"
     },
   ],
   nameField: "title",
