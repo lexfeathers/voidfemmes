@@ -45,7 +45,7 @@ cms.document(
   "my_fs:assets/styles.css", 
   [
     "content: markdown",
-]
+  ]
 );
 cms.document(
   "site-name: Edit the site name", 
@@ -95,7 +95,7 @@ cms.collection({
       type: "textarea",
       description: "Used on the front page",
       attributes: {
-        maxlength: 1500
+        maxlength: 800
       }
     },
   ],
@@ -105,10 +105,21 @@ cms.collection("pages", "my_fs:pages/*.md", [
   "title: text",
   "content: markdown",
 ]);
-cms.collection("links", "my_fs:links/*.md", [
-  "title: text",
-  "link: text",
-]);
+cms.collection({
+  name: "links",
+  store: "my_fs:links/*.md",
+  fields: [
+    {
+      name: "title",
+      type: "text",
+    },
+    {
+      name: "link",
+      type: "text",
+    },
+  ],
+  nameField: "title",
+});
 
 // 5. Configure a folder to upload files
 cms.upload("uploads", "my_fs:uploads");
