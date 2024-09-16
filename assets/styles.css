@@ -362,7 +362,7 @@ figure img {
   margin: auto;
   border: 1px solid var(--colour-secondary);
   border-radius: 8px;
-  box-shadow: 4px 6px 4px black;
+  box-shadow: 0px 6px 4px var(--colour-background);
   max-width: 100%;
 }
 

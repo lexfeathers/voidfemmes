@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>{% include "/templates/name.njk" %} - {{ title }}</title>
-		<meta name="theme-color" content="#141414" />
-		<link rel="stylesheet" href="/assets/styles.css" />
-		<meta name="robots" content="noai, noimageai">
-		<link rel="favicon" href="/assets/favicon.ico" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>		
-			{% include "templates/header.njk" %}
 
-			<main>
-				<aside id="sidebar">
-					{% include "/templates/sidebar.njk" %}
-				</aside>
-				<section id="content">
-					{% ifAsync title != 'home' and type != 'posts' %}
-						<a href="/" alt="Back to home" class="button"><- home</a>
-					{% elif type == 'posts' %}
-						<a href="/pages/directory" alt="Back to directory" class="button"><- directory</a>
-					{% endif %}
-					{% ifAsync title != 'home' %}
-						<h2>{{ title }}</h2>
-						<hr class="faded">
-					{% endif %}
-					{% ifAsync author %}
-						<h3 class="faded author">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
-					{% endif %}
-					<article>
-						{{ content | safe }}
-					</article>
-				</section>
-			</main>
+<head>
+	<meta charset="UTF-8">
+	<title>{% include "/templates/name.njk" %} - {{ title }}</title>
+	<meta name="theme-color" content="#141414" />
+	<link rel="stylesheet" href="/assets/styles.css" />
+	<meta name="robots" content="noai, noimageai">
+	<link rel="favicon" href="/assets/favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-			<div class="footer-container">
-				{% include "templates/footer.njk" %}
-			</div>
-	</body>
+<body>
+	{% include "templates/header.njk" %}
+
+	<main>
+		<aside id="sidebar">
+			{% include "/templates/sidebar.njk" %}
+		</aside>
+		<section id="content">
+
+			{% ifAsync title != 'home' and type != 'posts' %}
+				<a href="/" alt="Back to home" class="button"><- home</a>
+			{% elif type == 'posts' %}
+				<a href="/pages/directory" alt="Back to directory" class="button"><- directory</a>
+			{% endif %}
+
+			{% ifAsync title != 'home' %}
+				<h2>{{ title }}</h2>
+				<hr class="faded">
+			{% endif %}
+			
+			{% ifAsync author %}
+				<h3 class="faded author">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
+			{% endif %}
+
+			<article>
+				{% ifAsync type == 'posts' %}
+				<figure>
+					<img src="{{ image }}" alt="{{ title }}">
+				</figure>
+				<figcaption>{{ title }}</figcaption>
+				{% endif %}
+				{{ content | safe }}
+			</article>
+
+		</section>
+	</main>
+
+	<div class="footer-container">
+		{% include "templates/footer.njk" %}
+	</div>
+</body>
+
 </html>
