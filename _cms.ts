@@ -53,6 +53,15 @@ const cms = lumeCMS({
       --color-code-m: #940;
       --color-code-n: hsl(220, 20%, 80%);
     }
+    .header-description {
+      margin: 1rem 0;
+    }
+    .header-description a {
+      background-color: var(--color-highlight);
+      padding: 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
   </style>
     `,
 });
