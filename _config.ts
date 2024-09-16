@@ -22,14 +22,23 @@ site.use(date({
 }));
 site.use(feed({
   output: ["/posts.rss", "/posts.json"],
-  query: "type=post",
+  query: "type=posts",
+  sort: "date=desc,",
   info: {
-    title: "=site.title",
+    title: "Void Femmes",
     description: "=site.description",
+    published: new Date(), // The publishing date
+    lang: "en", // The language of the feed
+    generator: true, // Set `true` to automatically generate the "Lume {version}"
   },
   items: {
     title: "=title",
     description: "=excerpt",
+    published: "=date", // The publishing date of every item
+    updated: undefined, // The last update of every item
+    content: "=children", // The content of every item
+    lang: "=lang", // The language of every item
+    image: "=cover", // The image of the item
   },
 }));
 
