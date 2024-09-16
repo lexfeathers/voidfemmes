@@ -285,6 +285,10 @@ header nav {
   display: none;
 }
 
+#sidebar .rss {
+  display: none;
+}
+
 /* The little guy at the bottom of the sidebar. Currently hidden on mobile */
 #sidebar-character {
   display: flex;
