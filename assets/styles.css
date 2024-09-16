@@ -36,6 +36,7 @@
   font-family: 'Fira Code', monospace, 'Courier New', Courier;
   /* Not sure why, but Fira doesn't seem to _actually_ import with a font-weight of 300, so we're declaring it here. */
   font-weight: 300;
+  line-height: 1.6;
 }
 
 /* Helpers */

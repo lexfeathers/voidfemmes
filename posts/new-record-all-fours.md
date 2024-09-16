@@ -1,16 +1,23 @@
 ---
 title: 'New record: All Fours'
-author: Lex
+author: Lex Feathers
 draft: false
 published: 2024-09-10T21:15:00.000Z
 tags:
-  - releases
+- releases
 ---
-<figure><img src="/uploads/all-fours-cover.png"><figure>
-<figcaption>The cover art for All Fours</figcaption>
+<figure><img src="/uploads/all-fours-cover.png">
+  <figure>
+    <figcaption>The cover art for All Fours</figcaption>
 
-This is my new album! It's available on [Bandcamp](https://voidfemmes.bandcamp.com/album/all-fours)
+    <h2><a href="https://voidfemmes.bandcamp.com/album/all-fours">Buy on bandcamp</a></h2>
 
-Here's a bunch more text. I'm posting. It's great, and we all love it. I don't think I should stop posting. Who's gonna stop me... you????
+    It's very grimy and moody, I like to think!
+    I went for "ugly" sounds this time around, since I've noticed I have a tendency to fall into a "pretty" soundscape
+    typically.
+    This thing was made quickly and aggressively and I like to think that comes through in a good way.
 
-I don't think so bucko.
+    Hope you like it! As always, sharing helps me immensely ♥
+
+    I should also note that if you want to buy this record and you don't want Bandcamp to take 15%, you can buy it
+    directly from [my online store :)](https://shop.voidfemmes.ca/products/all-fours-album)

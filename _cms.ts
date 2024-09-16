@@ -86,6 +86,13 @@ cms.collection({
     },
     "content: markdown",
     "tags: list",
+    {
+      name: "excerpt",
+      type: "textarea",
+      attributes: {
+        maxlength: 1500
+      }
+    },
   ],
   nameField: "title",
 });
