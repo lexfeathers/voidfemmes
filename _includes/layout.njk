@@ -20,6 +20,7 @@
 		<aside id="sidebar">
 			{% include "/templates/sidebar.njk" %}
 		</aside>
+		
 		<section id="content">
 
 			{% ifAsync title != 'home' and type != 'posts' %}
@@ -32,7 +33,7 @@
 				<h2>{{ title }}</h2>
 				<hr class="faded">
 			{% endif %}
-			
+
 			{% ifAsync author %}
 				<h3 class="faded author">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
 			{% endif %}

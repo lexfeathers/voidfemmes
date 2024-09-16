@@ -77,10 +77,13 @@ cms.collection({
       name: "published",
       type: "datetime",
       label: "Created date",
-      description: "Set a future date if you want to publish it later",
+    },
+    {
+      name: "last_modified",
+      type: "current-datetime",
       attributes: {
-        placeholder: "For example: 2024-01-01 00:00:01",
-      },
+        readonly: true
+      }
     },
     {
       name: "image",
