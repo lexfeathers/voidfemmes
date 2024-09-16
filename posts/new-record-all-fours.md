@@ -2,7 +2,7 @@
 title: 'New record: All Fours'
 author: Lex Feathers
 draft: false
-published: 2024-09-10T17:15:00.000Z
+published: 2024-09-10T13:15:00.000Z
 tags:
   - releases
 excerpt: >-
@@ -14,7 +14,7 @@ excerpt: >-
   <figure>
     <figcaption>The cover art for All Fours</figcaption>
 
-    <h2><a href="https://voidfemmes.bandcamp.com/album/all-fours">Buy on bandcamp</a></h2>
+    <h2><a href="https://voidfemmes.bandcamp.com/album/all-fours" target="_blank">Buy on bandcamp</a></h2>
 
     This is an EP I tried to put together as fast as possible, so to ensure I would enjoy the process. It's very grimy and moody, I like to think!
     I went for "ugly" sounds this time around, since I've noticed I have a tendency to fall into a "pretty" soundscape
