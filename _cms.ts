@@ -89,6 +89,7 @@ cms.collection({
     {
       name: "excerpt",
       type: "textarea",
+      description: "Used on the front page",
       attributes: {
         maxlength: 1500
       }
