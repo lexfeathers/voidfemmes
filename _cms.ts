@@ -79,13 +79,6 @@ cms.collection({
       label: "Created date",
     },
     {
-      name: "last_modified",
-      type: "current-datetime",
-      attributes: {
-        readonly: true
-      }
-    },
-    {
       name: "image",
       type: "file",
       uploads: "uploads",
