@@ -107,6 +107,7 @@ cms.collection("pages", "my_fs:pages/*.md", [
 ]);
 cms.collection({
   name: "links",
+  description: "Social links that appear in the footer",
   store: "my_fs:links/*.md",
   fields: [
     "title: text",
