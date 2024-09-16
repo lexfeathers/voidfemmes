@@ -105,6 +105,10 @@ cms.collection("pages", "my_fs:pages/*.md", [
   "title: text",
   "content: markdown",
 ]);
+cms.collection("links", "my_fs:links/*.md", [
+  "title: text",
+  "link: text",
+]);
 
 // 5. Configure a folder to upload files
 cms.upload("uploads", "my_fs:uploads");
