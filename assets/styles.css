@@ -489,9 +489,9 @@ footer a {
     font-size: 14pt;
   }
 
-  /* header .menu {
-    flex-direction: column;
-  } */
+  header .menu li:first-child {
+    display: none;
+  }
 
   header .menu a {
     font-size: 12pt;
