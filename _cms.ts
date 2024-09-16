@@ -21,6 +21,7 @@ const cms = lumeCMS({
   extraHead: `
   <style>
     [data-theme="dark"] {
+      --color-black: hsl(220, 0%, 15%);
       --color-text: hsl(220, 0%, 90%);
       --color-dim: hsl(220, 0%, 60%);
       --color-line: hsl(220, 0%, 20%);
