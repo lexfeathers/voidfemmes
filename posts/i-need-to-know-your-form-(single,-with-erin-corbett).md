@@ -12,7 +12,7 @@ excerpt: An electronic odyssey through space and transformation.
 An electronic odyssey through space and transformation.
 This song was written and produced in collaboration with <a href="https://erincorbett.bandcamp.com/" target="_blank">Erin Corbett.</a>
 
-<a href="https://voidfemmes.bandcamp.com/track/i-need-to-know-your-form">Buy it on Bandcamp</a>
+[Buy it on Bandcamp](https://voidfemmes.bandcamp.com/track/i-need-to-know-your-form)
 
 Lyrics:
 ```
