@@ -1,1 +1,5 @@
 type: posts
+metas:
+  title: =title
+  "twitter:label2": Written by
+  "twitter:data1": =author
