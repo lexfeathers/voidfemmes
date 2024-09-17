@@ -372,15 +372,14 @@ a.external::after {
 /* Image handling */
 figure img {
   margin: auto;
-  border: 2px solid var(--colour-secondary);
+  border: 1px solid var(--colour-secondary);
   border-radius: 8px;
   box-shadow: 0px 6px 4px var(--colour-background);
   max-width: 100%;
 }
 
 figure {
-  margin: 2rem auto;
-  max-width: 50%;
+  margin: auto;
 }
 
 figure.right {
@@ -394,8 +393,18 @@ figcaption {
   margin: 0.5rem 0 0.75rem 0;
 }
 
+/* Styles specific to the headshot on the About page */
 #headshot {
   border-radius: 400px;
+}
+
+figure:has(#headshot) {
+  max-width: 50%;
+  margin: 2rem auto;
+}
+
+figure>img#headshot {
+  border: 2px solid var(--colour-secondary);
 }
 
 /* figcaption::before {
