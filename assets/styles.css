@@ -75,6 +75,7 @@ a:hover {
 ::selection {
   background: var(--colour-secondary);
   color: var(--colour-background);
+  -webkit-text-fill-color: var(--colour-background);
 }
 
 .name {
