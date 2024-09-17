@@ -368,6 +368,7 @@ a {
 
 a.external::after {
   content: '↗';
+  font-family: 'Fira Code', monospace;
   color: var(--colour-text);
   padding-left: 0.4rem;
   font-size: 10pt;
