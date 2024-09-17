@@ -1,11 +1,11 @@
 layout: layout.njk
 metas:
   site: $ h1
-  # title: $ h1
+  title: $ h1
   description: music and ideas by Lex Feathers
   author: Lex Feathers
-  icon: assets/favicon.ico
   image: assets/images/I need to know your form.jpg
+  icon: assets/favicon.ico
   "twitter:image:src": assets/images/I need to know your form.jpg
   keywords: ["music", "lex feathers", "dark electronic", "electronica"]
   lang: en
