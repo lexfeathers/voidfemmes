@@ -35,7 +35,7 @@
 			{% endif %}
 
 			{% ifAsync author %}
-				<h3 class="faded author">{{ author }}<span class="faded date">{{ date | date('HUMAN_DATE') }}</span></h3>
+				<h3 class="faded author">{{ author }}<span class="faded date">{{ published | date('HUMAN_DATE') }}</span></h3>
 			{% endif %}
 
 			<article>
