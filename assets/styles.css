@@ -509,6 +509,7 @@ footer a {
 
   header * {
     font-size: 14pt;
+    vertical-align: middle;
   }
 
   header .menu li:first-child {
