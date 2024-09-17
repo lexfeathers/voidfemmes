@@ -41,7 +41,7 @@ site.use(feed({
   items: {
     title: "=title",
     description: "=excerpt",
-    published: "=date",
+    published: "=published",
     updated: undefined,
     content: "=children",
     lang: "en",
