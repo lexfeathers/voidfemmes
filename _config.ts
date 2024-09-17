@@ -40,7 +40,7 @@ site.use(feed({
   },
   items: {
     title: "=title",
-    description: "=description",
+    description: "=excerpt",
     published: "=date",
     updated: undefined,
     content: "=children",

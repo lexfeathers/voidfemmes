@@ -4,5 +4,8 @@ metas:
   author: =author
   description: =excerpt
   image: =image
+  "twitter:card": =image
+  "twitter:title": =title
+  "twitter:description": =excerpt
   "twitter:label2": by
   "twitter:data1": =author

@@ -1,7 +1,7 @@
 layout: layout.njk
 metas:
   site: Void Femmes
-  description: music and ideas by Lex Feathers
+  excerpt: music and ideas by Lex Feathers
   icon: assets/favicon.ico
   image: assets/images/I need to know your form.jpg
   keywords: ["music", "lex feathers", "dark electronic", "electronica"]
