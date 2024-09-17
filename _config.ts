@@ -26,7 +26,7 @@ site.use(feed({
   sort: "date=desc,",
   info: {
     title: "Void Femmes",
-    description: "=site.description",
+    description: "music and ideas from Lex Feathers",
     published: new Date(), // The publishing date
     lang: "en", // The language of the feed
     generator: true, // Set `true` to automatically generate the "Lume {version}"
