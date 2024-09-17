@@ -7,7 +7,7 @@ order: 3
 
 The music heavily features breakbeats, weird distorted synths, occasionally guitars, and spacey vocals. The intent is to sound aggressive, playful and sensual.
 
-Void Femmes releases so far, from latest to oldest:
+Void Femmes releases so far, from newest to oldest:
 - [Seen](https://voidfemmes.bandcamp.com/track/seen)
 - [All Fours (EP)](https://voidfemmes.bandcamp.com/album/all-fours)
 - [I Need To Know Your Form (with Erin Corbett)](https://voidfemmes.bandcamp.com/track/i-need-to-know-your-form)
