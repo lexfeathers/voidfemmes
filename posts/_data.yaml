@@ -4,5 +4,5 @@ metas:
   author: =author
   description: =excerpt
   image: =image
-  "twitter:label2": Written by
+  "twitter:label2": by
   "twitter:data1": =author
