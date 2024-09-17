@@ -454,7 +454,11 @@ header h1 a {
 
 /* Footer styles */
 .footer-container {
-  display: block;
+  display: flex;
+}
+
+.footer-container footer {
+  justify-content: space-between;
 }
 
 .footer-container .menu {
@@ -464,6 +468,10 @@ header h1 a {
 footer {
   padding: 2rem 0;
   font-size: 12pt;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
 footer .menu {
@@ -518,6 +526,19 @@ footer a {
   .menu {
     flex-direction: row;
     padding-left: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rss {
+    display: none;
+  }
+
+  .menu-item .rss {
+    display: block;
   }
 
   footer a {
