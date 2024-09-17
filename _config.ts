@@ -8,7 +8,9 @@ import feed from "lume/plugins/feed.ts";
 import _cleancss from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
 import { underline } from "lume/deps/colors.ts";
 
-const site = lume();
+const site = lume({
+  location: new URL("https://voidfemmes.ca"),
+});
 site.use(nunjucks());
 site.use(favicon({
   input: "/assets/favicon.ico",
@@ -22,7 +24,7 @@ site.use(date({
     "MDY": "M/d/yyyy",
   },
 }));
-site.use(metas({/* Options */}));
+site.use(metas());
 site.use(feed({
   output: ["/feed.rss"],
 
