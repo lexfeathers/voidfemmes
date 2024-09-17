@@ -1,5 +1,8 @@
 type: posts
 metas:
   title: =title
+  author: =author
+  description: =excerpt
+  image: =image
   "twitter:label2": Written by
   "twitter:data1": =author
