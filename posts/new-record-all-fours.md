@@ -2,7 +2,7 @@
 title: 'New record: All Fours'
 author: Lex Feathers
 draft: false
-published: 2024-09-10T05:15:00.000Z
+published: 2024-03-23T01:15:00.000Z
 tags:
   - releases
 image: /uploads/all-fours-cover.png
@@ -12,7 +12,7 @@ excerpt: >-
   would enjoy the process. This thing was made aggressively and I like to think
   that comes through in a good way.
 ---
-    This is an EP I tried to put together as fast as possible, so to ensure I would enjoy the process. It's very grimy and moody, I like to think!
+This is an EP I tried to put together as fast as possible, so to ensure I would enjoy the process. It's very grimy and moody, I like to think!
     I went for "ugly" sounds this time around, since I've noticed I have a tendency to fall into a "pretty" soundscape
     typically.
     This thing was made quickly and aggressively and I like to think that comes through in a good way.
