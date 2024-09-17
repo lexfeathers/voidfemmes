@@ -2,7 +2,7 @@
 title: A Mouth Will Suffice (Single)
 author: Lex Feathers
 draft: false
-published: 2023-07-05T02:01:00.000Z
+published: 2023-07-04T22:01:00.000Z
 image: /uploads/A Mouth Will Suffice.jpg
 image_caption: The cover artwork for 'A Mouth Will Suffice'
 tags: []
