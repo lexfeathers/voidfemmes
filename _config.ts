@@ -28,7 +28,7 @@ site.use(feed({
   sort: "date=desc", // To sort by data in ascendent order
   limit: 10, // To show only the 10 first results
   info: {
-    title: "=site.title", // The feed title
+    title: "=site_name", // The feed title
     description: "=site.description", // The feed subtitle
     published: new Date(), // The publishing date
     lang: "en", // The language of the feed
