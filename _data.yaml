@@ -4,6 +4,7 @@ metas:
   excerpt: music and ideas by Lex Feathers
   icon: assets/favicon.ico
   image: assets/images/I need to know your form.jpg
+  "twitter:image:src": assets/images/I need to know your form.jpg
   keywords: ["music", "lex feathers", "dark electronic", "electronica"]
   lang: en
   generator: true
