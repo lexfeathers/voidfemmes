@@ -3,6 +3,7 @@ import nunjucks from "lume/plugins/nunjucks.ts";
 import favicon from "lume/plugins/favicon.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import date from "lume/plugins/date.ts";
+import metas from "lume/plugins/metas.ts";
 import feed from "lume/plugins/feed.ts";
 import _cleancss from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
 
@@ -20,20 +21,22 @@ site.use(date({
     "MDY": "M/d/yyyy",
   },
 }));
+site.use(metas({/* Options */}));
 site.use(feed({
-  output: ["/posts.rss", "/posts.json"],
-  query: "type=posts",
-  sort: "date=desc,",
+  output: ["/feed.rss", "/feed.json"], // The file or files that must be generated
+  query: "type=post", // Select only pages of type=post
+  sort: "date=desc", // To sort by data in ascendent order
+  limit: 10, // To show only the 10 first results
   info: {
-    title: "Void Femmes",
-    description: "music and ideas from Lex Feathers",
+    title: "=site.title", // The feed title
+    description: "=site.description", // The feed subtitle
     published: new Date(), // The publishing date
     lang: "en", // The language of the feed
     generator: true, // Set `true` to automatically generate the "Lume {version}"
   },
   items: {
-    title: "$title",
-    description: "=excerpt",
+    title: "=title", // The title of every item
+    description: "=excerpt", // The description of every item
     published: "=date", // The publishing date of every item
     updated: undefined, // The last update of every item
     content: "=children", // The content of every item
