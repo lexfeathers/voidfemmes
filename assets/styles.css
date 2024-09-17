@@ -72,6 +72,11 @@ a:hover {
   text-decoration: underline;
 }
 
+::selection {
+  background: var(--colour-secondary);
+  color: var(--colour-background);
+}
+
 .name {
   color: var(--colour-secondary);
 }
