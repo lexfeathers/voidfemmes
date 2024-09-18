@@ -66,6 +66,9 @@ const cms = lumeCMS({
       background: var(--color-code-e);
       color: var(--color-text);
     }
+    .app-footer {
+      justify-content: space-evenly;
+    }
   </style>
     `,
 });
