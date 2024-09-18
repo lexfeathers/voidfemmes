@@ -2,10 +2,9 @@
 title: test
 author: Lex Feathers
 draft: true
-published: 2024-09-15T12:57:00.000Z
-image: /uploads/all-fours-cover.png
-image_caption: This is a test caption
+published: 2024-09-17T12:12:00.000Z
+image: ''
 tags: []
-excerpt: This is the excerpt.
+excerpt: sdfgsdfgsdfg
 ---
-This is the content.
+sdfsdfsdf
