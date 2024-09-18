@@ -22,39 +22,49 @@
 		</aside>
 
 		<section id="content">
-
-			{% ifAsync title != 'home' and type != 'posts' %}
+			{% if title != 'home' and type != 'posts' %}
 				<a href="/" alt="Back to home" class="button"><- home</a>
 			{% elif type == 'posts' %}
 				<a href="/pages/directory" alt="Back to directory" class="button"><- directory</a>
 			{% endif %}
 
-			{% ifAsync title != 'home' %}
+			{% if title != 'home' %}
 				<h2>{{ title }}</h2>
 				<hr class="faded">
 			{% endif %}
 
-			{% ifAsync author %}
-				<h3 class="faded author">{{ author }}<span class="faded date">{{ published | date('HUMAN_DATE') }}</span></h3>
+			{% if author %}
+				<h3 class="faded author">
+					{{ author }}<span class="faded date">{{ published | date('HUMAN_DATE') }}</span>
+				</h3>
 			{% endif %}
 
 			<article>
-
-				{% ifAsync type == 'posts' %}
-					{% ifAsync image %}
+				{% if type == 'posts' %}
+					{% if image %}
 						<figure>
 							<img src="{{ image }}" alt="{{ title }}">
-						{% ifAsync image_caption %}
-							<figcaption>{{ image_caption }}</figcaption>
-						{% endif %}
+								{% if image_caption %}
+									<figcaption>{{ image_caption }}</figcaption>
+								{% endif %}
 						</figure>
 					{% endif %}
 				{% endif %}
 
 				{{ content | safe }}
 
+				{# Loop through tags and display them inline, if there are any #}
+				{% if tags != false %}
+					<div class="tags">
+						<h3>Tags:</h3>
+						<ul class="taglist">
+							{% for tag in tags %}
+								<li>{{ tag }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endif %}
 			</article>
-
 		</section>
 	</main>
 
