@@ -64,7 +64,7 @@ const cms = lumeCMS({
     }
     #logoutButton {
       background: var(--color-code-e);
-      color: var(--color-text);
+      color: white;
     }
     .app-footer {
       justify-content: space-evenly;
