@@ -343,7 +343,7 @@ header nav {
 
 /* Do not apply bottom padding to the homepage */
 #content article:not(:has(.homepage-excerpt)) {
-  padding: 0 0 6rem 0;
+  padding: 0 0 2rem 0;
 }
 
 a {
@@ -456,6 +456,7 @@ div.tags {
 ul.taglist {
   padding-left: 0px;
   list-style: none;
+  margin-bottom: 0;
 }
 
 .taglist li {
