@@ -62,6 +62,10 @@ const cms = lumeCMS({
       border-radius: 4px;
       font-weight: bold;
     }
+    #logoutButton {
+      background: var(--color-code-e);
+      color: var(--color-text);
+    }
   </style>
     `,
 });
