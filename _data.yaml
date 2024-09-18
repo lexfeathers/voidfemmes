@@ -4,9 +4,9 @@ metas:
   title: $ h1
   description: music and ideas by Lex Feathers
   author: Lex Feathers
-  image: assets/images/I need to know your form.jpg
   icon: assets/favicon.ico
-  "twitter:image:src": assets/images/I need to know your form.jpg
+  image: assets/images/linkpreview.jpg
+  "twitter:image:src": assets/images/linkpreview.jpg
   keywords: ["music", "lex feathers", "dark electronic", "electronica"]
   lang: en
   generator: true
