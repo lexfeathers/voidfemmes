@@ -6,7 +6,20 @@ metas:
   author: Lex Feathers
   icon: assets/favicon.ico
   image: assets/images/linkpreview.jpg
-  "twitter:image:src": assets/images/linkpreview.jpg
-  keywords: ["music", "lex feathers", "dark electronic", "electronica"]
+  'twitter:image:src': assets/images/linkpreview.jpg
+  keywords:
+    - music
+    - lex feathers
+    - dark electronic
+    - electronica
   lang: en
   generator: true
+website:
+  site_title: Void Femmes
+footer_links:
+  - title: Shop
+    url: 'https://shop.voidfemmes.ca'
+  - title: Bandcamp
+    url: 'https://voidfemmes.bandcamp.com'
+  - title: Instagram
+    url: 'https://instagram.com/voidfemmes'
