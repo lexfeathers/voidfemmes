@@ -3,12 +3,12 @@
   <hr> #}
 
   <ul class="menu">
-    {% set footerLinks = search.pages("type=footerLinks") %}
-    {% asyncEach item in footerLinks %}
+    {% set footerLinks = footer_links %}
+    {% for item in footerLinks %}
     <li class="menu-item">
       <a href="{{ item.link }}" target="_blank" class="external">{{ item.title }}</a>
     </li>
-    {% endeach %}
+    {% endfor %}
     <li class="menu-item">
       <a class="rss" href="/feed.rss" class="button">RSS</a>
     </li>
@@ -26,7 +26,7 @@
     </li>
   </ul> #}
 
-  <p class="copyright">&copy; {% include "/templates/name.njk" %} <span id="currentyear">{{ date | date('yyyy') }}</span></p>
+  <p class="copyright">&copy; {{ website.site_title }} <span id="currentyear">{{ date | date('yyyy') }}</span></p>
   {# <script>
     date = new Date();
     year = date.getFullYear();
