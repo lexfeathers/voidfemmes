@@ -6,7 +6,7 @@ import _fields from "lume/cms/fields/core.ts";
 const username = Deno.env.get("USERNAME");
 const password = Deno.env.get("PASSWORD");
 
-// 1. Create the cms instance
+// Create the cms instance
 const cms = lumeCMS({
   site: {
     name: "Void Femmes",
@@ -73,9 +73,8 @@ const cms = lumeCMS({
     `,
 });
 
-// 2. Create file system
+// Create file system
 // cms.storage("my_fs", "/");
-
 cms.storage(
   "my_fs",
   new GitHub({
@@ -85,30 +84,7 @@ cms.storage(
   }),
 );
 
-// 3. Create a document to edit the homepage (index.md file)
-cms.document(
-  "Landing page", 
-  "my_fs:index.njk", 
-  [
-    "content: markdown",
-  ]
-);
-cms.document(
-  "stylesheet: Edit the CSS for the site", 
-  "my_fs:assets/styles.css", 
-  [
-    "content: markdown",
-  ]
-);
-cms.document(
-  "site-name: Edit the site name", 
-  "my_fs:/_includes/templates/name.njk", 
-  [
-    "content: text",
-  ]
-);
-
-// 4. Create "posts" and "pages" collections
+// Create "posts" collection
 // using my_fs storage
 cms.collection({
   name: "posts",
@@ -154,26 +130,85 @@ cms.collection({
   ],
   nameField: "title",
 });
-cms.collection("pages", "my_fs:pages/*.md", [
-  "title: text",
-  "content: markdown",
-]);
+// Create "pages" collection
+// using my_fs storage
 cms.collection({
-  name: "links",
-  description: "Social links that appear in the footer",
-  store: "my_fs:links/*.md",
+  name: "pages", 
+  store: "my_fs:pages/*.md", 
   fields: [
     "title: text",
+    "content: markdown",
     {
-      name: "link",
-      type: "url",
-      label: "Link (needs to begin with https://)"
+      name: "draft",
+      type: "checkbox",
     },
   ],
   nameField: "title",
 });
 
-// 5. Configure a folder to upload files
+// Site settings
+cms.document(
+  "settings: Global settings for the site",
+  "my_fs:_data.yml",
+  [
+    {
+      name: "website",
+      type: "object",
+      description: "Key details about this site",
+      fields: [
+        {
+          name: "site_title",
+          type: "text",
+          label: "Site name",
+          description: "Name of the website",
+        },
+      ],
+    },
+    {
+      name: "footer_links",
+      type: "object-list",
+      description: "Links that appear in the footer",
+      fields: [
+        {
+          name: "title",
+          type: "text",
+          label: "Title",
+        },
+        {
+          name: "url",
+          type: "text",
+          label: "URL",
+        },
+      ],
+    },
+    {
+      name: "extra_head",
+      type: "code",
+      description: "Extra content to include in the <head> tag",
+    },
+  ],
+);
+
+// Edit the index contents
+cms.document(
+  "Index: Edit the homepage", 
+  "my_fs:index.njk", 
+  [
+    "type: code",
+    "content: markdown",
+  ]
+);
+
+// Edit the stylesheet
+cms.document(
+  "stylesheet: Edit the CSS for the site", 
+  "my_fs:assets/styles.css", 
+  [
+    "content: markdown",
+  ]
+);
+
+// Configure a folder to upload files
 cms.upload("uploads", "my_fs:uploads");
 
 // 6. Export the cms configuration
