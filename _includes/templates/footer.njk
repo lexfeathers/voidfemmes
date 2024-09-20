@@ -1,7 +1,4 @@
 <footer>
-  {#
-  <hr> #}
-
   <ul class="menu">
     {% set footerLinks = footer_links %}
     {% for item in footerLinks %}
@@ -14,24 +11,6 @@
     </li>
   </ul>
 
-  {# <ul class="menu">
-    <li class="menu-item">
-      <a href="https://instagram.com/voidfemmes" target="_blank" class="external">Instagram</a>
-    </li>
-    <li class="menu-item">
-      <a href="https://voidfemmes.bandcamp.com" target="_blank" class="external">Bandcamp</a>
-    </li>
-    <li class="menu-item">
-      <a href="https://shop.voidfemmes.ca" target="_blank" class="external">Shop</a>
-    </li>
-  </ul> #}
-
   <p class="copyright">&copy; {{ website.site_title }} <span id="currentyear">{{ date | date('yyyy') }}</span></p>
-  {# <script>
-    date = new Date();
-    year = date.getFullYear();
-
-    document.getElementById("currentyear").innerHTML = year;
-  </script> #}
   <a class="rss" href="/feed.rss" class="button">RSS</a>
 </footer>
