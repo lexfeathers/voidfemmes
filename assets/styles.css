@@ -376,11 +376,11 @@ a {
   color: var(--colour-text);
 }
 
-a.external::after {
+a.external:not(a:has(img)):after {
   content: '↗';
   font-family: 'Fira Code', monospace;
   color: var(--colour-text);
-  padding-left: 0.4rem;
+  padding-left: 2px;
   font-size: 10pt;
   vertical-align: top;
   opacity: 0.4;
