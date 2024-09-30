@@ -40,21 +40,3 @@ order: 1
   <a href="{{ post.url }}" class="button" style="text-align: right;"><span>Read more -></span></a>
   {% endeach %}
 </article>
-
-{# <div class="post-directory" class="text-small">
-  <h1>All posts<span class="faded"> (newest to oldest):</span></h1>
-
-  {% set posts = search.pages("type=posts draft=false", "published=desc") %}
-  {% ifAsync posts %}
-  <ul class="directory">
-    {% for post in posts %}
-    {% include "/templates/post-item.njk" %}
-    <span class="faded date">
-      {% include "/templates/date.njk" %}
-    </span>
-    {% endfor %}
-  </ul>
-  {% else %}
-  <p>There are no posts to display.</p>
-  {% endif %}
-</div> #}
