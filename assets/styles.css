@@ -186,6 +186,7 @@ article.homepage-excerpt {
   background-color: var(--colour-secondary);
   color: var(--colour-background);
   border-radius: 4px;
+  font-weight: 400;
 }
 
 /* 
