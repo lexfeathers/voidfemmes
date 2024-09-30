@@ -181,6 +181,13 @@ article.homepage-excerpt {
   min-width: 100%;
 }
 
+.read-more span {
+  padding: 8px;
+  background-color: var(--colour-secondary);
+  color: var(--colour-background);
+  border-radius: 4px;
+}
+
 /* 
 .homepage-excerpt-container div:nth-child(2)::after {
   content: '[...]';
