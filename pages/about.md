@@ -6,7 +6,7 @@ order: 3
 
 <figure>
   <img id="headshot" src="/uploads/vf_crop_jledger2024.png" alt="Void Femmes" loading="lazy" />
-  <figcaption>photo by <a href="https://www.jenna-ledger.com">Jenna Ledger</a></figcaption>
+  <figcaption style="text-align: center;">photo by <a href="https://www.jenna-ledger.com">Jenna Ledger</a></figcaption>
 </figure>
 
 ### Void Femmes is an electronic music project by [Lex Feathers.](https://lexfeathers.ca)
