@@ -23,6 +23,18 @@
   --sig-symbol: ' ~';
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --colour-background: #fff;
+    --colour-text: #141414;
+    --colour-secondary: #a90060;
+  }
+
+  *:not(.name) {
+    font-weight: 400;
+  }
+}
+
 /* Fonts */
 @font-face {
   font-family: "Fira Code", monospace;
