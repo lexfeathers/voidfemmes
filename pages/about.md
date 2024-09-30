@@ -5,7 +5,7 @@ order: 3
 ---
 
 <figure>
-  <img id="headshot" src="/assets/images/headshot.jpg" alt="Void Femmes" loading="lazy" />
+  <img id="headshot" src="/uploads/vf_crop_jledger2024.png" alt="Void Femmes" loading="lazy" />
 </figure>
 
 ### Void Femmes is an electronic music project by [Lex Feathers.](https://lexfeathers.ca)
