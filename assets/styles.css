@@ -5,7 +5,7 @@
   --page-width: 72rem;
 
   /* Key Colours */
-  --colour-background: #141414;
+  --colour-background: #121212;
   --colour-text: #ffffff;
   --colour-secondary: #ff7ac2;
 
@@ -21,6 +21,9 @@
 
   /* Title/logo symbol flourish */
   --sig-symbol: ' ~';
+
+  /* Etc */
+  --radius: 0px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -145,7 +148,7 @@ main * {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: calc(var(--radius) * 2);
   box-shadow: 0px 4px 4px var(--colour-background);
 }
 
@@ -159,7 +162,7 @@ audio {
   display: block;
   margin: 1rem auto;
   width: 100%;
-  border-radius: 4px;
+  border-radius: var(--radius);
   filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
   max-width: 80%;
 }
@@ -197,7 +200,7 @@ article.homepage-excerpt {
   padding: 8px;
   background-color: var(--colour-secondary);
   color: var(--colour-background);
-  border-radius: 4px;
+  border-radius: var(--radius);
   font-weight: 400;
 }
 
@@ -246,7 +249,7 @@ header nav {
 
 #sidebar,
 #content {
-  border-radius: 8px;
+  border-radius: calc(var(--radius) * 2);
   padding: 2rem;
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.4);
 }
@@ -344,7 +347,7 @@ header nav {
   /* width: 4px; */
   min-width: 4px;
   margin: 0 1rem 0 0;
-  border-radius: 4px;
+  border-radius: var(--radius);
 }
 
 #post-dir menu {
@@ -402,7 +405,7 @@ a.external:not(a:has(img)):after {
 figure img {
   margin: auto;
   border: 1px solid var(--colour-secondary);
-  border-radius: 8px;
+  border-radius: calc(var(--radius) * 2);
   box-shadow: 0px 6px 4px var(--colour-background);
   max-width: 100%;
 }
@@ -454,7 +457,7 @@ figcaption::after {
 /* Markdown code elements */
 code {
   padding: 2px 4px;
-  border-radius: 4px;
+  border-radius: var(--radius);
   background-color: var(--colour-text-highlight);
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
