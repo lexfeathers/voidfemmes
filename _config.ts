@@ -5,7 +5,7 @@ import sitemap from "lume/plugins/sitemap.ts";
 import date from "lume/plugins/date.ts";
 import metas from "lume/plugins/metas.ts";
 import feed from "lume/plugins/feed.ts";
-import _cleancss from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
+// import _cleancss from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
 // import { underline } from "lume/deps/colors.ts";
 
 const site = lume({
