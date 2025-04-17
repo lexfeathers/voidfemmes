@@ -105,6 +105,7 @@ a:hover {
   vertical-align: middle;
   border: 2px solid var(--colour-secondary);
   border-radius: 16px;
+  margin-bottom: 4px;
 }
 
 .name::after {
