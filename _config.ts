@@ -33,10 +33,10 @@ site.use(feed({
     title: "Void Femmes",
     description:
       "music and ideas by Lex Feathers",
-      authorName: "=author",
-      authorUrl: "https://voidfemmes.ca",
-      lang: "en",
-      generator: true,
+    authorName: "=author",
+    authorUrl: "https://voidfemmes.ca",
+    lang: "en",
+    generator: true,
   },
   items: {
     title: "=title",
