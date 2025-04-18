@@ -27,16 +27,16 @@ site.use(date({
 site.use(metas());
 site.use(feed({
   output: ["/feed.rss"],
-
   query: "type=posts",
   sort: "published=desc",
-
   info: {
     title: "Void Femmes",
     description:
       "music and ideas by Lex Feathers",
-    lang: "en",
-    generator: false,
+      authorName: "=author",
+      authorUrl: "https://voidfemmes.ca",
+      lang: "en",
+      generator: true,
   },
   items: {
     title: "=title",
