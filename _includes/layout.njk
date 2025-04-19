@@ -40,7 +40,7 @@
 				</h3>
 			{% endif %}
 
-			<article>
+			<article{% if type == 'posts' %} class="post"{% endif %}>
 				{% if type == 'posts' %}
 					{% if image %}
 						<figure>

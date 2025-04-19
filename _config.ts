@@ -43,7 +43,7 @@ site.use(feed({
     description: "=excerpt",
     published: "=published",
     updated: undefined,
-    content: "=children",
+    content: "$article.post || =children",
     lang: "en",
     image: "=image", // The image of the item
   },
