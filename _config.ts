@@ -30,13 +30,15 @@ site.use(feed({
   query: "type=posts",
   sort: "published=desc",
   info: {
-    title: "Void Femmes",
+    title: "=site.title",
     description:
       "music and ideas by Lex Feathers",
     authorName: "=author",
     authorUrl: "https://voidfemmes.ca",
     lang: "en",
     generator: true,
+    icon: "/assets/favicon.ico",
+    color: "#ff7ac2",
   },
   items: {
     title: "=title",
@@ -46,6 +48,8 @@ site.use(feed({
     content: "$article.post || =children",
     lang: "en",
     image: "=image", // The image of the item
+    authorName: "=author",
+    authorUrl: "https://voidfemmes.ca",    
   },
 }));
 
