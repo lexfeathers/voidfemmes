@@ -14,6 +14,7 @@ order: 3
 The music heavily features breakbeats, weird distorted synths, occasionally guitars, and spacey vocals. The intent is to sound aggressive, playful and sensual.
 
 ### Void Femmes releases so far, from newest to oldest:
+- [ Carving out a little hollow 2024-09-12](https://voidfemmes.bandcamp.com/track/carving-out-a-little-hollow-2024-09-12)
 - [Seen](https://voidfemmes.bandcamp.com/track/seen)
 - [All Fours (EP)](https://voidfemmes.bandcamp.com/album/all-fours)
 - [I Need To Know Your Form (with Erin Corbett)](https://voidfemmes.bandcamp.com/track/i-need-to-know-your-form)
