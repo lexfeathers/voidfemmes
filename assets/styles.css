@@ -193,7 +193,7 @@ article.homepage-excerpt {
   overflow: hidden;
   background: -webkit-linear-gradient(var(--colour-text), var(--colour-text), var(--colour-text), var(--colour-text), rgba(0, 0, 0, 0.0));
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   min-width: 100%;
 }
 
